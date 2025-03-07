@@ -6,8 +6,9 @@
     <title>Sup</title>
 </head>
 <body>
+    <h1><
     <p id="output"></p>
-    
+    </h1>
     <script>
        // Object containing adjectives for each day
         const adjectives = {
@@ -26,7 +27,7 @@
             const today = new Date().toLocaleDateString('en-US', { weekday: 'long' });
             const randomAdj = adjectives[today][Math.floor(Math.random() * adjectives[today].length)];
             
-            document.getElementById('output').innerText = `${today} is ${randomAdj}!`;
+            document.getElementById('output').innerText = '${randomAdj}! ${today} `;
         }
 
         // Run the function when the page loads
