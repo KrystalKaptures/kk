@@ -1,23 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <meta name="description" content="Evidence Krystal was here.">
 
     
-    <title>Sup World </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+
+
+    
+    <title>Sup World - kkH</title>
 </head>
 <body>
-<h1>Hello World - kkH</h1> 
-<h2>
-    <a href="day.html"> What Day is it? </a>
-   </h2> 
 
-</body>
-    <footer>
-<p>created by krystal and AI</p>
+    <p><h2>
+        <p id="output"></p>
+       
         
-    </footer>
-</html>
+        <script>
+           // Object containing adjectives for each day
+           const adjectives = {
+                'Sunday': ['Serene', 'Spectacular', 'Sunny', 'Sensational', 'Soothing', 'Splendid', 'Spiritual', 'Sublime', 'Surreal', 'Stellar'],
+                'Monday': ['Magnificent', 'Mellow', 'Marvelous', 'Misty', 'Motivated', 'Majestic', 'Mindful', 'Magical', 'Meticulous', 'Mirthful'],
+                'Tuesday': ['Terrific', 'Tranquil', 'Tough', 'Tidy', 'Tenacious', 'Thriving', 'Trustworthy', 'Talented', 'Tactful', 'Timely'],
+                'Wednesday': ['Wonderful', 'Witty', 'Warm', 'Wistful', 'Wise', 'Whimsical', 'Wondrous', 'Welcoming', 'Watchful', 'Winning'],
+                'Thursday': ['Thrilling', 'Thankful', 'Tasty', 'Thoughtful', 'Tactful', 'Trusting', 'Transformative', 'Trendy', 'Triumphant', 'Tender'],
+                'Friday': ['Fantastic', 'Fabulous', 'Friendly', 'Fresh', 'Fearless', 'Festive', 'Flourishing', 'Fervent', 'Funky', 'Focused'],
+                'Saturday': ['Superb', 'Serendipitous', 'Stunning', 'Spontaneous', 'Strong', 'Soulful', 'Sincere', 'Sensuous', 'Satisfying', 'Sociable']
+            };
+    
+            // Function to get the current day and a random adjective
+            function displayDayAndAdjective() {
+                const today = new Date().toLocaleDateString('en-US', { weekday: 'long' });
+                const randomAdj = adjectives[today][Math.floor(Math.random() * adjectives[today].length)];
+                
+                document.getElementById('output').innerText = ` ${randomAdj}! ${today}`;
+            }
+    
+            // Run the function when the page loads
+            window.onload = displayDayAndAdjective;
+        </script>
+       </h2></p>
 
+    <p><h1>Happy Day</h1></p>  
+
+<p style="text-align: end;">Loading ... Completion Grade..... </p>
+</body>
+<footer >
+    <div style="align-items: center;">
+      <a href="https://www.instagram.com/krystalkonsciousness/">
+        <img src="thumb_kamera.jpg">
+      </a>
+      <a href="https://www.twitch.tv/krystalkaptures">
+       <img src="thumb_kamera.jpg">
+      </a>
+      <a href="https://www.youtube.com/@KrystalKaptured">
+        <img src="thumb_kamera.jpg">
+      </a>
+      <a href="https://krystalkaptured.blogspot.com/" >
+        <img src="thumb_cloud.jpg">
+      </a>
+    </div>
+    <p><img src="images/kkfish.gif" style="width: 25px; alt="kkh fish"><i>-created by kkh & ai</i></p>
+        
+</footer>
+
+
+</html>
