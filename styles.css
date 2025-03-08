@@ -8,20 +8,24 @@
 /* Body Styling */
 body {
     font-family: 'Arial', sans-serif;
+    background-image: url('.jpg');
     background-color: #f0f8ff; /* Light blue background */
     color: #333; /* Dark text color */
+    background-size: 50%; /* Ensures the image covers the entire viewport */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
    
-}
+
 
 /* Main text output container */
 #output {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #2c3e50;
+    color: #202058;
     text-align: center;
     padding: 20px;
     border-radius: 10px;
-    background-color: #ecf0f1; /* Light gray background */
+    background-color: #6473a6; /* Light gray background */
   
 }
 
@@ -61,11 +65,11 @@ footer {
     color: #7f8c8d;
     margin-top: 20px;
     padding: 10px;
-    background-color: #34495e;
+    background-color: #87b4e2;
     color: white;
     width: 100%;
-    text-align:end;
-    position: absolute;
+    text-align: center;
+
     bottom: 0;
 }
 
@@ -76,6 +80,10 @@ footer a {
     padding: 5px 10px;
 }
 
+
+
 footer a:hover {
     color: #f39c12;
+
 }
+
